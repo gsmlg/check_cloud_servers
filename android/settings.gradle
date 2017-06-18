@@ -1,0 +1,3 @@
+rootProject.name = 'vultr_ping'
+
+include ':app'
