@@ -178,14 +178,14 @@ export default class vultr_ping extends Component {
         <Text style={styles.header}>
           Vultr Host Ping
         </Text>
-      <ScrollView
-        directionalLockEnabled={true}
-        alwaysBounceHorizontal={false}
-        showsHorizontalScrollIndicator={false}
-        style={styles.hostList}
-        >
-        {_.map(orderArr, (item) => { return this._renderItem(item);})}
-      </ScrollView>
+        <ScrollView
+          directionalLockEnabled={true}
+          alwaysBounceHorizontal={false}
+          showsHorizontalScrollIndicator={false}
+          style={styles.hostList}
+          >
+          {_.map(orderArr, (item) => { return this._renderItem(item);})}
+        </ScrollView>
       </View>
     );
   }
@@ -196,6 +196,7 @@ const bgColor = '#135790';
 const styles = StyleSheet.create({
   container: {
     display: 'flex',
+    flex: 1,
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
