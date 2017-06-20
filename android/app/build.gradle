@@ -94,7 +94,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.vultr_ping"
+        applicationId "com.check_cloud_servers"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode 1
