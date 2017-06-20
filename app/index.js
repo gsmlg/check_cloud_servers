@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   Text,
   View,
+  FlatList,
   ScrollView,
 } from 'react-native';
 
@@ -23,14 +24,11 @@ class App extends Component {
         <Text style={styles.header}>
           Vultr的数据中心
         </Text>
-        <ScrollView
-          directionalLockEnabled={true}
-          alwaysBounceHorizontal={false}
-          showsHorizontalScrollIndicator={false}
-          style={styles.hostList}
-          >
-          {map(servers, server => (<Card key={server.key} server={server} />))}
-        </ScrollView>
+        <FlatList
+          contentContainerStyle={styles.list}
+          data={servers}
+          renderItem={ ({item}) => (<Card key={item.key} server={item} />)}
+        />
       </View>
     );
   }

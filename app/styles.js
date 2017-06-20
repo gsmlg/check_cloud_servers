@@ -20,9 +20,10 @@ const styles = create({
     textAlign: 'center',
     margin: 24,
   },
-  hostList: {
-    width: '80%',
-    backgroundColor: bgColor,
+  list: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
   },
 });
 

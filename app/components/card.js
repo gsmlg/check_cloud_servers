@@ -10,6 +10,7 @@ const { create } = StyleSheet;
 
 const styles = create({
   card: {
+    width: 220,
     padding: 6,
     margin: 6,
     flexDirection: 'column',
@@ -17,6 +18,7 @@ const styles = create({
   },
   header: {
     flexDirection: 'row',
+    marginBottom: 4,
   },
   flag: {
     margin: 4,
