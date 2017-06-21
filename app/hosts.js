@@ -117,11 +117,12 @@ const images = {
   'flag_us.png': require('./img/flag_us.png'),
 };
 
-export default Hosts.map(host => {
+export default Hosts.reduce((hosts, host) => {
   host.flagImage = images[host.flag];
-  host.package = host + '/vultr.com.100MB.bin';
-  host.status = null;
+  host.package = host.host + '/vultr.com.100MB.bin';
+  host.status = 'unkown';
   host.checkedStatus = [];
   host.downloadSpeed = null;
-  return host;
-});
+  hosts[host.key] = host;
+  return hosts;
+}, {});

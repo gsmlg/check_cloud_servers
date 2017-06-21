@@ -13,4 +13,4 @@ import {
 
 import Main from './main';
 
-AppRegistry.registerComponent('check_cloud_servers', () => Main);
+AppRegistry.registerComponent('Check_Cloud_Servers', () => Main);
